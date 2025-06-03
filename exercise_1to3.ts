@@ -4,7 +4,13 @@ Minta input angka dan tampilkan apakah angka tersebut genap atau ganjil.
 Petunjuk: gunakan % dan if else.
 */
 
+let inputAngka:number = 12;
 
+if(inputAngka %2 === 0){
+  console.log(`${inputAngka} adalah GENAP`);
+} else {
+  console.log(`${inputAngka} adalah GANJIL`);
+}
 
 
 // Exercise 2
@@ -12,13 +18,27 @@ Petunjuk: gunakan % dan if else.
 Gunakan for loop untuk mencetak angka 1 sampai 10.
 */
 
+let inputAngkaa:number = 10;
 
+for(let index = 1; index <= inputAngkaa; index++){
+  console.log(index);
+}
 
 // Exercise 3
 /*
 Minta input n, jumlahkan semua angka dari 1 sampai n.
 Contoh: n = 5 → 15
 */
+
+let inputNumber:number = 5;
+let sumNumber:number = 0;
+
+for(let i:number = 0; i <= inputNumber; i++){
+  console.log(i);
+  sumNumber = sumNumber + i;
+}
+
+console.log(sumNumber);
 
 
 // Exercise 4
@@ -31,11 +51,26 @@ Contoh:
 
 70–79 → B
 
+60-69 : C
+
+50-59: D
 ...
 
 < 50 → E
 */
 
+let inputNilai = 50;
+if(inputNilai >= 80){
+  console.log("Nilai Anda A");
+} else if(inputNilai > 70 && inputNilai < 79){
+  console.log("Nilai Anda B");
+} else if(inputNilai > 60 && inputNilai < 69){
+  console.log("Nilai Anda C");
+} else if(inputNilai > 50 && inputNilai < 59){
+  console.log("Nilai Anda D");
+} else{
+  console.log("Nilai Anda E");
+}
 
 
 // Exercise 5
@@ -214,38 +249,24 @@ Tidak mengandung spasi
 /*
 📝 Deskripsi Masalah:
 Kamu diminta membuat program analisis nilai siswa untuk sebuah bimbel privat. Setiap siswa memiliki:
-
 * Nama
-
 * Nilai (dalam array)
-
 * Status aktif (boolean)
 
 Program harus melakukan:
-
 1. Menampilkan semua siswa yang aktif.
-
 2. Menghitung rata-rata nilai masing-masing siswa.
-
 3. Memberikan predikat berdasarkan rata-rata:
-
     A: 85–100
-
     B: 70–84
-
     C: 55–69
-
     D: <55
-
 4. Menentukan siapa siswa dengan nilai rata-rata tertinggi.
-
 5. Semua proses dilakukan melalui function-function terpisah.
 
 🧠 Petunjuk:
 1. Gunakan array of objects untuk menyimpan data siswa.
-
 2. Gunakan loop untuk memproses seluruh data.
-
 3. Gunakan function untuk:
     Menghitung rata-rata
     Menentukan predikat
@@ -271,9 +292,6 @@ Nama: Citra
 Rata-rata: 90.33
 Predikat: A
 
-Nama: Dina
-Rata-rata: 48.33
-Predikat: D
 
 Siswa dengan nilai tertinggi: Citra (90.33)
 
