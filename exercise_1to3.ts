@@ -41,6 +41,7 @@ for(let i:number = 0; i <= inputNumber; i++){
 console.log(sumNumber);
 
 
+
 // Exercise 4
 /*
 Input nilai ujian 0–100, tampilkan huruf nilai: A, B, C, D, E.
